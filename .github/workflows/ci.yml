@@ -14,10 +14,9 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
-      - run: |
-        sudo apt-get -yqq install libpq-dev
-        gem install bundler
-        bundle install --jobs 4 --retry 3
-        bundle exec rails db:create
-        bundle exec rails db:migrate
-        bundle exec rails test
+      - name: Install dependencies
+        run: sudo apt-get -yqq install libpq-dev
+      - name: Install bundler
+        run: gem install bundler
+      - name: Run Specs
+        run: bundle exec rspec
