@@ -17,4 +17,4 @@ jobs:
       - run: |
         sudo apt-get -yqq install libpq-dev
         gem install bundler
-        bundle exec rspec
+      - run: bundle exec rspec .
