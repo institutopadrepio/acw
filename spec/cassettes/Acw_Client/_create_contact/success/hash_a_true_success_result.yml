@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://url.api-us1.com/api/3/contacts
+    body:
+      encoding: UTF-8
+      string: '{"contact":{"email":"fulanodetal@sicrano.com","firstName":"Fulano","lastName":"Sicrano","phone":"1231123123"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Token:
+      - token
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sat, 02 May 2020 10:14:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2009'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - PHPSESSID=efc3cac61a0433ea8db414b4330165a4; path=/; HttpOnly
+      - __cfduid=d1dce68d95b1395b6dee36e5db0094e661588414490; expires=Mon, 01-Jun-20
+        10:14:50 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=889460b3-9e29-4148-a098-3a1939835453; path=/; domain=.url.api-us1.com;
+        secure; httponly
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      Access-Control-Allow-Headers:
+      - Content-Type, origin, x-requested-with
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      X-Content-Type-Options:
+      - nosniff
+      X-Envoy-Upstream-Service-Time:
+      - '182'
+      X-Request-Id:
+      - c49e0557-2a8a-45ed-8052-5c650f4dbfb5
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58d0fa439998db9c-GIG
+      Cf-Request-Id:
+      - 02767abe3d0000db9c91875200000001
+    body:
+      encoding: UTF-8
+      string: '{"contact":{"email":"fulanodetal@sicrano.com","phone":"1231123123","firstName":"Fulano","lastName":"Sicrano","cdate":"2020-05-02T05:14:50-05:00","udate":"2020-05-02T05:14:50-05:00","orgid":"","orgname":"","links":{},"id":"355748","organization":""}}'
+    http_version: null
+  recorded_at: Sat, 02 May 2020 10:14:50 GMT
+recorded_with: VCR 5.1.0

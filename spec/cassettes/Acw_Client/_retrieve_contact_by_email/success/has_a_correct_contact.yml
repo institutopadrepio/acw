@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://url.api-us1.com/api/3/contacts?search=someone@email.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Token:
+      - token
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 May 2020 15:50:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - PHPSESSID=0ebf7815cf6ea3943945a4dc57e8498b; path=/; HttpOnly
+      - __cfduid=de1dbf2595f2acc70eb5c64752ee4587f1588348219; expires=Sun, 31-May-20
+        15:50:19 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=b2e5ec76-6174-4146-bd00-e596c394f490; path=/; domain=.url.api-us1.com;
+        secure; httponly
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      Access-Control-Allow-Headers:
+      - Content-Type, origin, x-requested-with
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      X-Content-Type-Options:
+      - nosniff
+      X-Envoy-Upstream-Service-Time:
+      - '101'
+      X-Request-Id:
+      - b6aaeb5d-11f9-453a-a95a-83f2bc55f218
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58caa856ac6af5f7-GRU
+      Cf-Request-Id:
+      - '0272878a260000f5f72c20d200000001'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"scoreValues":[],"contacts":[{"cdate":"2020-04-29T19:58:03-05:00","email":"someone@email.com","phone":"","firstName":"Anchieta","lastName":"","orgid":"0","orgname":"","segmentio_id":"","bounced_hard":"0","bounced_soft":"0","bounced_date":null,"ip":"0","ua":"","hash":"","socialdata_lastcheck":null,"email_local":"","email_domain":"","sentcnt":"0","rating_tstamp":"0000-00-00","gravatar":"0","deleted":"0","anonymized":"0","adate":null,"udate":"2020-04-29T19:58:03-05:00","edate":null,"deleted_at":"0000-00-00
+        00:00:00","created_utc_timestamp":"2020-04-29 19:58:03","updated_utc_timestamp":"2020-04-29
+        19:58:03","created_timestamp":"2020-04-29 19:58:03","updated_timestamp":"2020-04-29
+        19:58:03","created_by":"0","updated_by":"0","scoreValues":[],"accountContacts":[],"links":{},"id":"349151","organization":null}],"meta":{"total":"1","sortable":true,"page_input":{"segmentid":0,"formid":0,"listid":0,"tagid":0,"limit":20,"offset":0,"search":"someone@email.com","sort":null,"seriesid":0,"waitid":0,"status":-1,"forceQuery":0,"cacheid":""}}}'
+    http_version: null
+  recorded_at: Fri, 01 May 2020 15:50:20 GMT
+recorded_with: VCR 5.1.0

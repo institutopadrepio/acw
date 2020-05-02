@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://url.api-us1.com/api/3/contacts/349151
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Token:
+      - token
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 May 2020 15:50:12 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - PHPSESSID=84d7296cde102e1f13cdc878859f704c; path=/; HttpOnly
+      - __cfduid=d3575dc302654a5913072475b16874aed1588348212; expires=Sun, 31-May-20
+        15:50:12 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=0bdb6586-325f-46be-a395-1873ce36f0a1; path=/; domain=.url.api-us1.com;
+        secure; httponly
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      Access-Control-Allow-Headers:
+      - Content-Type, origin, x-requested-with
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      X-Content-Type-Options:
+      - nosniff
+      X-Envoy-Upstream-Service-Time:
+      - '119'
+      X-Request-Id:
+      - f7d2074f-1a85-4871-867a-3c8e19ce028b
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58caa82608a2f6d7-GRU
+      Cf-Request-Id:
+      - '0272876bc60000f6d72badd200000001'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"contactAutomations":[],"contactLists":[{"contact":"349151","list":"12","form":null,"seriesid":"0","sdate":"2020-04-29T19:58:03-05:00","udate":null,"status":"1","responder":"1","sync":"38","unsubreason":"","campaign":null,"message":null,"first_name":"Anchieta","last_name":"","ip4Sub":"2130706433","sourceid":"1","autosyncLog":null,"ip4_last":"0","ip4Unsub":"0","created_timestamp":"2020-04-29
+        19:58:03","updated_timestamp":"2020-04-29 19:58:03","created_by":"0","updated_by":"0","unsubscribeAutomation":null,"links":{"automation":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642989\/automation","list":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642989\/list","contact":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642989\/contact","form":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642989\/form","autosyncLog":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642989\/autosyncLog","campaign":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642989\/campaign","unsubscribeAutomation":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642989\/unsubscribeAutomation","message":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642989\/message"},"id":"642989","automation":null},{"contact":"349151","list":"19","form":null,"seriesid":"0","sdate":"2020-04-29T19:58:03-05:00","udate":null,"status":"1","responder":"1","sync":"37","unsubreason":null,"campaign":null,"message":null,"first_name":"Anchieta","last_name":"","ip4Sub":"2130706433","sourceid":"1","autosyncLog":null,"ip4_last":"0","ip4Unsub":"0","created_timestamp":"2020-04-29
+        19:58:03","updated_timestamp":"2020-04-29 19:58:03","created_by":null,"updated_by":null,"unsubscribeAutomation":null,"links":{"automation":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642991\/automation","list":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642991\/list","contact":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642991\/contact","form":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642991\/form","autosyncLog":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642991\/autosyncLog","campaign":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642991\/campaign","unsubscribeAutomation":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642991\/unsubscribeAutomation","message":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642991\/message"},"id":"642991","automation":null},{"contact":"349151","list":"20","form":null,"seriesid":"0","sdate":"2020-04-29T19:58:03-05:00","udate":null,"status":"1","responder":"1","sync":"37","unsubreason":null,"campaign":null,"message":null,"first_name":"Anchieta","last_name":"","ip4Sub":"2130706433","sourceid":"1","autosyncLog":null,"ip4_last":"0","ip4Unsub":"0","created_timestamp":"2020-04-29
+        19:58:03","updated_timestamp":"2020-04-29 19:58:03","created_by":null,"updated_by":null,"unsubscribeAutomation":null,"links":{"automation":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642993\/automation","list":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642993\/list","contact":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642993\/contact","form":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642993\/form","autosyncLog":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642993\/autosyncLog","campaign":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642993\/campaign","unsubscribeAutomation":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642993\/unsubscribeAutomation","message":"https:\/\/url.api-us1.com\/api\/3\/contactLists\/642993\/message"},"id":"642993","automation":null}],"deals":[],"fieldValues":[],"geoIps":[],"accountContacts":[],"contact":{"cdate":"2020-04-29T19:58:03-05:00","email":"someone@email.com","phone":"","firstName":"Anchieta","lastName":"","orgid":"0","orgname":"","segmentio_id":"","bounced_hard":"0","bounced_soft":"0","bounced_date":null,"ip":"0","ua":"","hash":"90ff100140549189bf25a0a13cc09597","socialdata_lastcheck":null,"email_local":"","email_domain":"","sentcnt":"0","rating_tstamp":"0000-00-00","gravatar":"0","deleted":"0","anonymized":"0","adate":null,"udate":"2020-04-29T19:58:03-05:00","edate":null,"deleted_at":"0000-00-00
+        00:00:00","created_utc_timestamp":"2020-04-29 19:58:03","updated_utc_timestamp":"2020-04-29
+        19:58:03","created_timestamp":"2020-04-29 19:58:03","updated_timestamp":"2020-04-29
+        19:58:03","created_by":"0","updated_by":"0","contactAutomations":[],"contactLists":["642989","642991","642993"],"fieldValues":[],"geoIps":[],"deals":[],"accountContacts":[],"links":{"bounceLogs":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/bounceLogs","contactAutomations":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/contactAutomations?limit=1000&orders%5Blastdate%5D=DESC","contactData":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/contactData","contactGoals":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/contactGoals","contactLists":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/contactLists","contactLogs":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/contactLogs","contactTags":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/contactTags","contactDeals":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/contactDeals","deals":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/deals","fieldValues":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/fieldValues","geoIps":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/geoIps","notes":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/notes","organization":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/organization","plusAppend":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/plusAppend","trackingLogs":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/trackingLogs","scoreValues":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/scoreValues","accountContacts":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/accountContacts","automationEntryCounts":"https:\/\/url.api-us1.com\/api\/3\/contacts\/349151\/automationEntryCounts"},"id":"349151","organization":null}}'
+    http_version: null
+  recorded_at: Fri, 01 May 2020 15:50:12 GMT
+recorded_with: VCR 5.1.0

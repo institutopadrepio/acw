@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://url.api-us1.com/api/3/tags
+    body:
+      encoding: UTF-8
+      string: '{"tag":{"tag":"teste-api-2021","tagType":"contact"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Token:
+      - token
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Fri, 01 May 2020 23:13:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '203'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - PHPSESSID=1ed8276c787c09c9416dc769b4264e62; path=/; HttpOnly
+      - __cfduid=d8d7e61fe6947d428ec28ad0543990ca61588374818; expires=Sun, 31-May-20
+        23:13:38 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      - em_acp_globalauth_cookie=fda7aec8-63d0-400e-95c0-6fbb90ee0a08; path=/; domain=.url.api-us1.com;
+        secure; httponly
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      X-Envoy-Upstream-Service-Time:
+      - '78'
+      X-Request-Id:
+      - 24ab274a-3800-4fd1-84bc-f2bd34a30335
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58cd31ba9d064beb-GRU
+      Cf-Request-Id:
+      - 02741d689c00004bebebbc6200000001
+    body:
+      encoding: UTF-8
+      string: '{"tag":{"tag":"teste-api-2021","tagType":"contact","cdate":"2020-05-01T18:13:39-05:00","links":{"contactGoalTags":"https:\/\/url.api-us1.com\/api\/3\/tags\/44\/contactGoalTags"},"id":"44"}}'
+    http_version: null
+  recorded_at: Fri, 01 May 2020 23:13:39 GMT
+recorded_with: VCR 5.1.0

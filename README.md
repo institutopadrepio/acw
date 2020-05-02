@@ -1,8 +1,6 @@
 # Acw
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/acw`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is a very simple wrapper of the Active Campaign Api.
 
 ## Installation
 
@@ -22,17 +20,93 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+> ### Initialize client
 
-## Development
+```ruby
+client = Acw::Client.new({
+    url:   'your-url',
+    token: 'your-token'
+})
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+> ### Connection details
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```ruby
+client = Acw::Client.new({
+    url:   'your-url',
+    token: 'your-token'
+})
 
-## Contributing
+client.connection
+```
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/acw.
+> ### Create contact
+
+```ruby
+client.create_contact({
+    email:     'contact@email.com',
+    firstName: 'first',
+    lastName:  'last',
+    phone:     '12312312'
+})
+```
+
+> ### Sync contact (Create or Update)
+
+```ruby
+client.sync_contact({
+    email:     'contact@email.com',
+    firstName: 'first',
+    lastName:  'last',
+    phone:     '12312312'
+})
+```
+
+> ### Retrieve contact
+
+```ruby
+client.retrieve_contact("contact_id")
+```
+
+> ### Retrieve contact by email
+
+This will return an array of contacts.
+
+```ruby
+client.retrieve_contact_by_email("email")
+```
+
+> ### Retrieve lists
+
+```ruby
+client.retrieve_lists
+```
+
+> ### Create tag
+
+```ruby
+client.create_tag({ 
+    tag: "tag_name", tagType: "tag_type"  
+})
+```
+
+> ### Add a tag to contact
+
+It generates a relationship called contactTag containing an id.
+
+```ruby
+client.add_contact_tag({ 
+    contact: "contact_id", tag: "tag_id"
+})
+```
+
+> ### Remove a tag to contact
+
+To remove a tag from contact just remove the relationship between them.
+
+```ruby
+client.remove_contact_tag("contact_tag_id)
+```
 
 ## License
 

@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://url.api-us1.com/api/3/lists
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Token:
+      - token
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 May 2020 20:16:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - PHPSESSID=5e1373c11bfb40db2267d3b66afdfd8d; path=/; HttpOnly
+      - __cfduid=dc2e218afce779df72e0b1c16f9a3921f1588364208; expires=Sun, 31-May-20
+        20:16:48 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=ba58e9ff-53c6-4d2a-8cda-35715832cfe7; path=/; domain=.url.api-us1.com;
+        secure; httponly
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      X-Envoy-Upstream-Service-Time:
+      - '80'
+      X-Request-Id:
+      - 9564a3ee-6539-4a7d-a471-8613dc88cb1e
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58cc2eae5af3f3d7-GRU
+      Cf-Request-Id:
+      - 02737b80f50000f3d7ea9bc200000001
+    body:
+      encoding: ASCII-8BIT
+      string: '{"lists":[],"meta":{"total":"14"}}'
+    http_version: null
+  recorded_at: Fri, 01 May 2020 20:16:48 GMT
+recorded_with: VCR 5.1.0

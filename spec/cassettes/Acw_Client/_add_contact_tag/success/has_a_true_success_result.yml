@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://url.api-us1.com/api/3/contactTags
+    body:
+      encoding: UTF-8
+      string: '{"contactTag":{"contact":"349151","tag":"38"}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Token:
+      - token
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sat, 02 May 2020 10:03:09 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2890'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - PHPSESSID=b0393c3c33109c7dad808ecd926ef61f; path=/; HttpOnly
+      - __cfduid=db960c9c43ece3d05692434a79f51f04c1588413788; expires=Mon, 01-Jun-20
+        10:03:08 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=d6e87477-8eaf-4a70-94fe-4603514010e0; path=/; domain=.url.api-us1.com;
+        secure; httponly
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.url.api-us1.com
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      X-Envoy-Upstream-Service-Time:
+      - '197'
+      X-Request-Id:
+      - 042b2ea0-9900-4706-83ef-661f37b4ac15
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58d0e92399f209c4-GIG
+      Cf-Request-Id:
+      - 0276700a3b000009c49c39b200000001
+    body:
+      encoding: UTF-8
+      string: '{"contacts":[{"cdate":"2020-04-29T19:58:03-05:00","email":"someone@email.com","phone":"","firstName":"Name","lastName":"","orgid":"0","orgname":"","segmentio_id":"","bounced_hard":"0","bounced_soft":"0","bounced_date":"0000-00-00","ip":"0","ua":"","hash":"","socialdata_lastcheck":"0000-00-00
+        00:00:00","email_local":"","email_domain":"","sentcnt":"0","rating_tstamp":"0000-00-00","gravatar":"0","deleted":"0","anonymized":"0","adate":"2020-05-02T05:01:25-05:00","udate":"2020-05-02T05:03:08-05:00","edate":null,"deleted_at":"0000-00-00
+        00:00:00","created_utc_timestamp":"2020-04-29 19:58:03","updated_utc_timestamp":"2020-05-02
+        05:03:08","created_timestamp":"2020-04-29 19:58:03","updated_timestamp":"2020-05-02
+        05:03:08","created_by":"0","updated_by":"0","links":{},"id":"349151","organization":null}],"contactTag":{"contact":"349151","tag":"38","cdate":"2020-05-02T05:03:08-05:00","links":{"tag":"https:\/\/url.api-us1.com\/api\/3\/contactTags\/558923\/tag","contact":"https:\/\/url.api-us1.com\/api\/3\/contactTags\/558923\/contact"},"id":"558923"}}'
+    http_version: null
+  recorded_at: Sat, 02 May 2020 10:03:09 GMT
+recorded_with: VCR 5.1.0
