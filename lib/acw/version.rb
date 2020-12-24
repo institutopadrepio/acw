@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Acw
-  VERSION = "0.1.1"
+  VERSION = '1.1.2'
 end
