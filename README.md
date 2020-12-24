@@ -32,11 +32,6 @@ client = Acw::Client.new({
 > ### Connection details
 
 ```ruby
-client = Acw::Client.new({
-    url:   'your-url',
-    token: 'your-token'
-})
-
 client.connection
 ```
 
