@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
-require 'faraday'
+require 'excon'
 require 'cgi'
 require 'json'
+require 'pry'
 
 module Acw
   class Client
+    API_VERSION = 3
     Result = Struct.new(:success?, :error, :value)
 
     def initialize(configs = {})
@@ -15,46 +17,49 @@ module Acw
     attr_reader :config
 
     def connection
-      @connection ||= Faraday.new(url: config[:url]) do |faraday|
-        faraday.headers['Accept'] = 'application/json'
-        faraday.headers['Content-Type'] = 'application/json'
-        faraday.headers['Api-Token'] = config[:token]
-        faraday
-      end
+      @connection ||= Excon.new(config[:url])
     end
 
     # CONTACTS
     def create_contact(args={})
       safe_http_call do
         params = { contact: args }
-        connection.post('contacts', params.to_json)
+        connection.post(
+          path: "/api/#{API_VERSION}/contacts",
+          headers: headers,
+          body: params.to_json
+        )
       end
     end
 
     def sync_contact(args = {})
       safe_http_call do
         params = { contact: args }
-        connection.post('contact/sync', params.to_json)
+        connection.post(
+          path: "/api/#{API_VERSION}/contact/sync",
+          headers: headers,
+          body: params.to_json
+        )
       end
     end
 
     def retrieve_contact(id)
       safe_http_call do
-        connection.get("contacts/#{id}")
+        connection.get(path: "/api/#{API_VERSION}/contacts/#{id}", headers: headers)
       end
     end
 
     def retrieve_contact_by_email(email)
       safe_http_call do
         uemail = CGI.escape email
-        connection.get("contacts?search=#{uemail}")
+        connection.get(path: "/api/#{API_VERSION}/contacts?search=#{uemail}", headers: headers)
       end
     end
 
     # LISTS
     def retrieve_lists
       safe_http_call do
-        connection.get('lists')
+        connection.get(path: "/api/#{API_VERSION}/lists", headers: headers)
       end
     end
 
@@ -62,24 +67,40 @@ module Acw
     def create_tag(args = {})
       safe_http_call do
         params = { 'tag': args }
-        connection.post('tags', params.to_json)
+        connection.post(
+          path: "/api/#{API_VERSION}/tags",
+          headers: headers,
+          body: params.to_json
+        )
       end
     end
 
     def add_contact_tag(args = {})
       safe_http_call do
         params = { 'contactTag': args }
-        connection.post('contactTags', params.to_json)
+        connection.post(
+          path: "/api/#{API_VERSION}/contactTags",
+          headers: headers,
+          body: params.to_json
+        )
       end
     end
 
     def remove_contact_tag(id)
       safe_http_call do
-        connection.delete("contactTags/#{id}")
+        connection.delete(path: "/api/#{API_VERSION}/contactTags/#{id}", headers: headers)
       end
     end
 
     private
+
+    def headers
+      {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Api-Token': config[:token]
+      }
+    end
 
     def safe_http_call
       response = yield

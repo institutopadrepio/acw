@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe Acw::Client do
   let(:config) do
     {
-      url: 'https://url.api-us1.com/api/3/',
+      url: 'https://url.api-us1.com/',
       token: 'token'
     }
   end
@@ -18,8 +18,8 @@ RSpec.describe Acw::Client do
         expect(client.is_a?(Acw::Client)).to be_truthy
       end
 
-      it 'has a connection with headers' do
-        expect(client.connection.headers).to_not be_nil
+      it 'has a connection with the correct URL' do
+        expect(client.config[:url]).to eq config[:url]
       end
     end
   end
