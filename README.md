@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-> ### Initialize client
+### Initialize client
 
 ```ruby
 client = Acw::Client.new({
@@ -29,13 +29,13 @@ client = Acw::Client.new({
 })
 ```
 
-> ### Connection details
+### Connection details
 
 ```ruby
 client.connection
 ```
 
-> ### Create contact - [Api Reference](https://developers.activecampaign.com/reference#create-a-contact-new)
+### Create contact - [Api Reference](https://developers.activecampaign.com/reference#create-a-contact-new)
 
 ```ruby
 client.create_contact({
@@ -46,7 +46,7 @@ client.create_contact({
 })
 ```
 
-> ### Sync contact (Create or Update) - [Api Reference](https://developers.activecampaign.com/reference#create-or-update-contact-new)
+### Sync contact (Create or Update) - [Api Reference](https://developers.activecampaign.com/reference#create-or-update-contact-new)
 
 ```ruby
 client.sync_contact({
@@ -57,13 +57,13 @@ client.sync_contact({
 })
 ```
 
-> ### Retrieve contact - [Api Reference](https://developers.activecampaign.com/reference#get-contact)
+### Retrieve contact - [Api Reference](https://developers.activecampaign.com/reference#get-contact)
 
 ```ruby
 client.retrieve_contact("contact_id")
 ```
 
-> ### Retrieve contact by email
+### Retrieve contact by email
 
 This will return an array of contacts.
 
@@ -71,13 +71,13 @@ This will return an array of contacts.
 client.retrieve_contact_by_email("email")
 ```
 
-> ### Retrieve lists - [Api Reference](https://developers.activecampaign.com/reference#retrieve-all-lists)
+### Retrieve lists - [Api Reference](https://developers.activecampaign.com/reference#retrieve-all-lists)
 
 ```ruby
 client.retrieve_lists
 ```
 
-> ### Create tag - [Api Reference](https://developers.activecampaign.com/reference#tags)
+### Create tag - [Api Reference](https://developers.activecampaign.com/reference#tags)
 
 ```ruby
 client.create_tag({ 
@@ -85,7 +85,7 @@ client.create_tag({
 })
 ```
 
-> ### Add a tag to contact - [Api Reference](https://developers.activecampaign.com/reference#create-contact-tag)
+### Add a tag to contact - [Api Reference](https://developers.activecampaign.com/reference#create-contact-tag)
 
 It generates a relationship called contactTag containing an id.
 
@@ -95,7 +95,7 @@ client.add_contact_tag({
 })
 ```
 
-> ### Remove a tag to contact - [Api Reference](https://developers.activecampaign.com/reference#delete-contact-tag)
+### Remove a tag to contact - [Api Reference](https://developers.activecampaign.com/reference#delete-contact-tag)
 
 To remove a tag from contact just remove the relationship between them.
 
@@ -103,7 +103,7 @@ To remove a tag from contact just remove the relationship between them.
 client.remove_contact_tag("contact_tag_id)
 ```
 
-> ### Create field value - [Api Reference](https://developers.activecampaign.com/reference#create-fieldvalue)
+### Create field value - [Api Reference](https://developers.activecampaign.com/reference#create-fieldvalue)
 
 It generates a relationship called fieldVaalue containing an id.
 
