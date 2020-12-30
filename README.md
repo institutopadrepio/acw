@@ -117,7 +117,7 @@ client.create_field_value(
 )
 ```
 
-> ### Update a field value - [Api Reference](https://developers.activecampaign.com/reference#update-a-custom-field-value-for-contact)
+### Update a field value - [Api Reference](https://developers.activecampaign.com/reference#update-a-custom-field-value-for-contact)
 
 It updates a relationship called fieldVaalue containing an id.
 
