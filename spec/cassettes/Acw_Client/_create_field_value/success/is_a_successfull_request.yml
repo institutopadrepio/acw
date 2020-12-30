@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://url.api-us1.com/api/3/fieldValues
+    body:
+      encoding: UTF-8
+      string: '{"fieldValue":{"contact":572218,"field":2,"value":"field_value"}}'
+    headers:
+      User-Agent:
+      - excon/0.78.1
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Token:
+      - token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Dec 2020 02:42:15 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3025'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5d89628b15216302044304413d21593a1609296134; expires=Fri, 29-Jan-21
+        02:42:14 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax, PHPSESSID=677e09c2f41a2c12a182fb6dd5d3ac16;
+        path=/; HttpOnly, em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970
+        00:00:01 GMT; Max-Age=0; path=/; domain=.yourdomain.api-us1.com, em_acp_globalauth_cookie=deleted;
+        expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.yourdomain.api-us1.com,
+        em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.yourdomain.api-us1.com, em_acp_globalauth_cookie=921c0789-ce71-42bd-92f3-4ff3d5724058;
+        path=/; domain=.yourdomain.api-us1.com; secure; httponly
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      X-Envoy-Upstream-Service-Time:
+      - '131'
+      X-Request-Id:
+      - 8be0ce6a-547c-4089-af0f-ee584b89a33f
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 07531f5a5a0000db8c3dae2000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6098680a2f08db8c-GIG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"contacts":[{"cdate":"2020-12-25T11:14:12-06:00","email":"fulanodetal222@sicrano.com","phone":"1231123123","firstName":"Fulano","lastName":"Sicrano","orgid":"0","orgname":"","segmentio_id":"","bounced_hard":"0","bounced_soft":"0","bounced_date":"0000-00-00","ip":"0","ua":"","hash":"0421d5b3c48344756571b65b1277ba33","socialdata_lastcheck":"0000-00-00
+        00:00:00","email_local":"","email_domain":"","sentcnt":"0","rating_tstamp":"0000-00-00","gravatar":"0","deleted":"0","anonymized":"0","adate":"2020-12-29T20:42:05-06:00","udate":"2020-12-29T20:42:14-06:00","edate":null,"deleted_at":"0000-00-00
+        00:00:00","created_utc_timestamp":"2020-12-25 11:14:12","updated_utc_timestamp":"2020-12-29
+        20:42:14","created_timestamp":"2020-12-25 11:14:12","updated_timestamp":"2020-12-29
+        20:42:14","created_by":"0","updated_by":"0","email_empty":false,"links":{"bounceLogs":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/bounceLogs","contactAutomations":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/contactAutomations?limit=1000&orders%5Blastdate%5D=DESC","contactData":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/contactData","contactGoals":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/contactGoals","contactLists":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/contactLists","contactLogs":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/contactLogs","contactTags":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/contactTags","contactDeals":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/contactDeals","deals":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/deals","fieldValues":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/fieldValues","geoIps":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/geoIps","notes":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/notes","organization":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/organization","plusAppend":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/plusAppend","trackingLogs":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/trackingLogs","scoreValues":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/scoreValues","accountContacts":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/accountContacts","automationEntryCounts":"https:\/\/yourdomain.api-us1.com\/api\/3\/contacts\/572218\/automationEntryCounts"},"id":"572218","organization":null}],"fieldValue":{"contact":572218,"field":2,"value":"field_value","cdate":"2020-12-29T19:51:46-06:00","udate":"2020-12-29T20:42:14-06:00","created_by":"0","updated_by":"0","links":{"owner":"https:\/\/yourdomain.api-us1.com\/api\/3\/fieldValues\/803383\/owner","field":"https:\/\/yourdomain.api-us1.com\/api\/3\/fieldValues\/803383\/field"},"owner":572218,"id":"803383"}}'
+    http_version:
+  recorded_at: Wed, 30 Dec 2020 02:42:15 GMT
+recorded_with: VCR 5.1.0

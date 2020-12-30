@@ -3,7 +3,6 @@
 require 'excon'
 require 'cgi'
 require 'json'
-require 'pry'
 
 module Acw
   class Client
@@ -21,7 +20,7 @@ module Acw
     end
 
     # CONTACTS
-    def create_contact(args={})
+    def create_contact(args = {})
       safe_http_call do
         params = { contact: args }
         connection.post(
@@ -66,7 +65,7 @@ module Acw
     # TAGS
     def create_tag(args = {})
       safe_http_call do
-        params = { 'tag': args }
+        params = { tag: args }
         connection.post(
           path: "/api/#{API_VERSION}/tags",
           headers: headers,
@@ -92,6 +91,29 @@ module Acw
       end
     end
 
+    # FIELD_VALUES
+    def create_field_value(args = {})
+      safe_http_call do
+        params = { 'fieldValue': args }
+        connection.post(
+          path: "/api/#{API_VERSION}/fieldValues",
+          headers: headers,
+          body: params.to_json
+        )
+      end
+    end
+
+    def update_field_value(id, args = {})
+      safe_http_call do
+        params = { 'fieldValue': args }
+        connection.put(
+          path: "/api/#{API_VERSION}/fieldValues/#{id}",
+          headers: headers,
+          body: params.to_json
+        )
+      end
+    end
+
     private
 
     def headers
@@ -112,7 +134,7 @@ module Acw
     end
 
     def success_http_status(status)
-      [200, 201].include?(status)
+      [200, 201, 202].include?(status)
     end
   end
 end

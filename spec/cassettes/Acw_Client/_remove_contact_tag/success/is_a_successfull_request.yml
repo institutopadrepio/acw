@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://url.api-us1.com/api/3/contactTags/774364
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.78.1
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Token:
+      - token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Dec 2020 17:53:32 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9dae0634f3c218752efd2ec412fb19561609350812; expires=Fri, 29-Jan-21
+        17:53:32 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax, PHPSESSID=0f49ef7a3394d3dc3374a6b9d2e22e5c;
+        path=/; HttpOnly, em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970
+        00:00:01 GMT; Max-Age=0; path=/; domain=.yourdomain.api-us1.com, em_acp_globalauth_cookie=deleted;
+        expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.yourdomain.api-us1.com,
+        em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.yourdomain.api-us1.com, em_acp_globalauth_cookie=19999bab-c68f-48da-ad33-bab887411221;
+        path=/; domain=.yourdomain.api-us1.com; secure; httponly
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      X-Envoy-Upstream-Service-Time:
+      - '148'
+      X-Request-Id:
+      - d3edaea4-bdbf-4f5d-8f3f-47df9f6eb46e
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 075661aa2f00000a0458259000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 609d9ef04fd30a04-GIG
+    body:
+      encoding: ASCII-8BIT
+      string: "{}"
+    http_version:
+  recorded_at: Wed, 30 Dec 2020 17:53:32 GMT
+recorded_with: VCR 5.1.0

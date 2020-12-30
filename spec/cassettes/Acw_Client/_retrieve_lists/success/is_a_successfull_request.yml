@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://url.api-us1.com/api/3/contacts/99999999999
+    uri: https://url.api-us1.com/api/3/lists
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,11 @@ http_interactions:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
       Date:
-      - Fri, 01 May 2020 20:52:51 GMT
+      - Fri, 01 May 2020 20:16:48 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -31,33 +31,25 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=2c74dcb8cfdecd75093cbc8770f0ffa1; path=/; HttpOnly
-      - __cfduid=d02280dda028f02b769934f0b4014fb9d1588366371; expires=Sun, 31-May-20
-        20:52:51 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=28b7b6bd-3bd4-465b-9d7c-303bf369ebf4; path=/; domain=.url.api-us1.com;
+      - PHPSESSID=39440a2a8dbd84eaed5920e608e99067; path=/; HttpOnly
+      - __cfduid=dda1f74e722805447957f46482d1ab7061588364207; expires=Sun, 31-May-20
+        20:16:47 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=071495a5-4fd5-4ad9-b99c-cacebf924d5b; path=/; domain=.url.api-us1.com;
         secure; httponly
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
         path=/; domain=.url.api-us1.com
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
         path=/; domain=.url.api-us1.com
-      Access-Control-Allow-Headers:
-      - Content-Type, origin, x-requested-with
-      Access-Control-Allow-Methods:
-      - POST, GET
-      Access-Control-Allow-Origin:
-      - "*"
       Cache-Control:
       - no-store, no-cache, must-revalidate
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Pragma:
       - no-cache
-      X-Content-Type-Options:
-      - nosniff
       X-Envoy-Upstream-Service-Time:
-      - '83'
+      - '97'
       X-Request-Id:
-      - 4dc436e9-37ac-48b2-8036-1c09734ab74b
+      - a3686cec-56fd-4024-bcc7-61c5d2e4a78b
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
@@ -65,12 +57,12 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 58cc637c8fecf1ee-GRU
+      - 58cc2eab5b05f66b-GRU
       Cf-Request-Id:
-      - '02739c81d50000f1ee3bb5a200000001'
+      - 02737b7f1b0000f66b0e181200000001
     body:
       encoding: ASCII-8BIT
-      string: '{"message":"No Result found for Subscriber with id 99999999999"}'
+      string: '{"lists":[{"stringid":"everyone", "userid":"4", "name":"EveryOne"}, {"stringid":"just-some", "userid":"4", "name":"Just Some"}],"meta":{"total":"14"}}'
     http_version: null
-  recorded_at: Fri, 01 May 2020 20:52:51 GMT
+  recorded_at: Fri, 01 May 2020 20:16:48 GMT
 recorded_with: VCR 5.1.0

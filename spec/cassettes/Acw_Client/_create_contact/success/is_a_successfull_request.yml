@@ -5,7 +5,7 @@ http_interactions:
     uri: https://url.api-us1.com/api/3/contacts
     body:
       encoding: UTF-8
-      string: '{"contact":{"email":"fulanodetal2@sicrano.com","firstName":"Fulano","lastName":"Sicrano","phone":"1231123123"}}'
+      string: '{"contact":{"email":"fulanodetal@sicrano.com","firstName":"Fulano","lastName":"Sicrano","phone":"1231123123"}}'
     headers:
       Accept:
       - application/json
@@ -23,18 +23,18 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sat, 02 May 2020 10:22:33 GMT
+      - Sat, 02 May 2020 10:14:50 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '2010'
+      - '2009'
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=618ad2bc8a8ac6dc9b3f5b0f66d9d449; path=/; HttpOnly
-      - __cfduid=d7188bd3bf3e034abf3d54c0a1044afe31588414952; expires=Mon, 01-Jun-20
-        10:22:32 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=b8961ff0-0e7f-469a-b5f7-b4a8354ba3c8; path=/; domain=.url.api-us1.com;
+      - PHPSESSID=efc3cac61a0433ea8db414b4330165a4; path=/; HttpOnly
+      - __cfduid=d1dce68d95b1395b6dee36e5db0094e661588414490; expires=Mon, 01-Jun-20
+        10:14:50 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
+      - em_acp_globalauth_cookie=889460b3-9e29-4148-a098-3a1939835453; path=/; domain=.url.api-us1.com;
         secure; httponly
       - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
         path=/; domain=.url.api-us1.com
@@ -55,9 +55,9 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Envoy-Upstream-Service-Time:
-      - '207'
+      - '182'
       X-Request-Id:
-      - fcc06ef3-9910-4437-ba1f-83d35b02818a
+      - c49e0557-2a8a-45ed-8052-5c650f4dbfb5
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
@@ -65,12 +65,12 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 58d1058eac0409ec-GIG
+      - 58d0fa439998db9c-GIG
       Cf-Request-Id:
-      - '027681cd24000009ec55010200000001'
+      - 02767abe3d0000db9c91875200000001
     body:
       encoding: UTF-8
-      string: '{"contact":{"email":"fulanodetal2@sicrano.com","phone":"1231123123","firstName":"Fulano","lastName":"Sicrano","cdate":"2020-05-02T05:22:32-05:00","udate":"2020-05-02T05:22:32-05:00","orgid":"","orgname":"","links":{},"id":"355749","organization":""}}'
+      string: '{"contact":{"email":"fulanodetal@sicrano.com","phone":"1231123123","firstName":"Fulano","lastName":"Sicrano","cdate":"2020-05-02T05:14:50-05:00","udate":"2020-05-02T05:14:50-05:00","orgid":"","orgname":"","links":{},"id":"355748","organization":""}}'
     http_version: null
-  recorded_at: Sat, 02 May 2020 10:22:33 GMT
+  recorded_at: Sat, 02 May 2020 10:14:50 GMT
 recorded_with: VCR 5.1.0

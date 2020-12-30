@@ -1,5 +1,7 @@
-require "acw/version"
-require "acw/client"
+# frozen_string_literal: true
+
+require 'acw/version'
+require 'acw/client'
 
 module Acw
   module_function
