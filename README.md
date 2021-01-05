@@ -50,10 +50,22 @@ client.create_contact({
 
 ```ruby
 client.sync_contact({
+  contact: {
     email:     'contact@email.com',
     firstName: 'first',
     lastName:  'last',
-    phone:     '12312312'
+    phone:     '12312312',
+    fieldValues: [
+      {
+        field: '1',
+        value: 'My Value'
+      },
+      {
+        field: '2',
+        value: 'My second value'
+      }
+    ]   
+  }
 })
 ```
 

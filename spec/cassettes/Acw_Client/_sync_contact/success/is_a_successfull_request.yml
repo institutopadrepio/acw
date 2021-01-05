@@ -5,41 +5,40 @@ http_interactions:
     uri: https://url.api-us1.com/api/3/contact/sync
     body:
       encoding: UTF-8
-      string: '{"contact":{"email":"fulanodetal3@sicrano.com","firstName":"Fulano2","lastName":"Sicrano2","phone":"1231123123"}}'
+      string: '{"contact":{"email":"fulanodetal3@sicrano.com","firstName":"Fulano","lastName":"de
+        Tal","fieldValues":[{"field":3,"value":"First Value"},{"field":1,"value":"Last
+        Value"}]}}'
     headers:
+      User-Agent:
+      - excon/0.78.1
       Accept:
       - application/json
       Content-Type:
       - application/json
       Api-Token:
       - token
-      User-Agent:
-      - Faraday v1.0.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 201
-      message: Created
+      code: 200
+      message: OK
     headers:
       Date:
-      - Sat, 02 May 2020 10:29:18 GMT
+      - Tue, 05 Jan 2021 22:17:08 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '2012'
+      - '3356'
       Connection:
       - keep-alive
       Set-Cookie:
-      - PHPSESSID=56c5ec7d9300a4a36876e8ab3cd4dd6b; path=/; HttpOnly
-      - __cfduid=d8f631705dd4a1f48df11be77e486a8071588415357; expires=Mon, 01-Jun-20
-        10:29:17 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax
-      - em_acp_globalauth_cookie=54ef767b-a8d7-4efe-9849-bab939bdeb92; path=/; domain=.url.api-us1.com;
-        secure; httponly
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.url.api-us1.com
-      - em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
-        path=/; domain=.url.api-us1.com
+      - __cfduid=db49b37fc72005829ad36db679c2efcce1609885027; expires=Thu, 04-Feb-21
+        22:17:07 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax, PHPSESSID=138795423fc65c560b72b63282cbeb98;
+        path=/; HttpOnly, em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970
+        00:00:01 GMT; Max-Age=0; path=/; domain=.mydomain.api-us1.com, em_acp_globalauth_cookie=deleted;
+        expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.mydomain.api-us1.com,
+        em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.mydomain.api-us1.com, em_acp_globalauth_cookie=023d8efe-1dda-49a8-88eb-2c84739f7d5d;
+        path=/; domain=.mydomain.api-us1.com; secure; httponly
       Access-Control-Allow-Headers:
       - Content-Type, origin, x-requested-with
       Access-Control-Allow-Methods:
@@ -55,22 +54,26 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Envoy-Upstream-Service-Time:
-      - '136'
+      - '445'
       X-Request-Id:
-      - 1df4fde4-b98f-43a8-978b-2d0a0dd89f0b
+      - 5fdb0bfd-4be3-47fc-9507-02c99b4fbecc
       Cf-Cache-Status:
       - DYNAMIC
+      Cf-Request-Id:
+      - '07763925510000dba03a257000000001'
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 58d10f72eb02dbc4-GIG
-      Cf-Request-Id:
-      - '027687fbd30000dbc434ac4200000001'
+      - 60d0914eef3fdba0-GIG
     body:
-      encoding: UTF-8
-      string: '{"contact":{"email":"fulanodetal3@sicrano.com","phone":"1231123123","firstName":"Fulano2","lastName":"Sicrano2","cdate":"2020-05-02T05:29:18-05:00","udate":"2020-05-02T05:29:18-05:00","orgid":"","orgname":"","links":{},"id":"355750","organization":""}}'
-    http_version: null
-  recorded_at: Sat, 02 May 2020 10:29:18 GMT
+      encoding: ASCII-8BIT
+      string: '{"fieldValues":[{"contact":"578613","field":"3","value":"First Value","cdate":"2021-01-05T16:16:32-06:00","udate":"2021-01-05T16:17:08-06:00","created_by":"0","updated_by":"0","links":{"owner":"https:\/\/mydomain.api-us1.com\/api\/3\/fieldValues\/804889\/owner","field":"https:\/\/mydomain.api-us1.com\/api\/3\/fieldValues\/804889\/field"},"id":"804889","owner":"578613"},{"contact":"578613","field":"1","value":"Last
+        Value","cdate":"2021-01-05T16:16:32-06:00","udate":"2021-01-05T16:17:08-06:00","created_by":"0","updated_by":"0","links":{"owner":"https:\/\/mydomain.api-us1.com\/api\/3\/fieldValues\/804890\/owner","field":"https:\/\/mydomain.api-us1.com\/api\/3\/fieldValues\/804890\/field"},"id":"804890","owner":"578613"}],"contact":{"cdate":"2021-01-05T16:16:32-06:00","email":"fulanodetal3@sicrano.com","phone":"","firstName":"Fulano","lastName":"de
+        Tal","orgid":"0","orgname":"","segmentio_id":"","bounced_hard":"0","bounced_soft":"0","bounced_date":null,"ip":"0","ua":null,"hash":"57bfe0be18293daccadbacacab7ce1fe","socialdata_lastcheck":null,"email_local":"","email_domain":"","sentcnt":"0","rating_tstamp":null,"gravatar":"0","deleted":"0","anonymized":"0","adate":null,"udate":"2021-01-05T16:17:08-06:00","edate":null,"deleted_at":null,"created_utc_timestamp":"2021-01-05
+        16:16:32","updated_utc_timestamp":"2021-01-05 16:16:32","created_timestamp":"2021-01-05
+        16:16:32","updated_timestamp":"2021-01-05 16:16:32","created_by":null,"updated_by":null,"email_empty":false,"links":{"bounceLogs":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/bounceLogs","contactAutomations":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/contactAutomations?limit=1000&orders%5Blastdate%5D=DESC","contactData":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/contactData","contactGoals":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/contactGoals","contactLists":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/contactLists","contactLogs":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/contactLogs","contactTags":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/contactTags","contactDeals":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/contactDeals","deals":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/deals","fieldValues":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/fieldValues","geoIps":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/geoIps","notes":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/notes","organization":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/organization","plusAppend":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/plusAppend","trackingLogs":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/trackingLogs","scoreValues":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/scoreValues","accountContacts":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/accountContacts","automationEntryCounts":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578613\/automationEntryCounts"},"fieldValues":["804889","804890"],"id":"578613","organization":null}}'
+    http_version:
+  recorded_at: Tue, 05 Jan 2021 22:17:07 GMT
 recorded_with: VCR 5.1.0

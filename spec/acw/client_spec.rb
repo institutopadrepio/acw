@@ -55,10 +55,21 @@ RSpec.describe Acw::Client do
       let(:result) do
         client.sync_contact(
           {
-            email: 'fulanodetal3@sicrano.com',
-            firstName: 'Fulano2',
-            lastName: 'Sicrano2',
-            phone: '1231123123'
+            contact: {
+              email: 'fulanodetal3@sicrano.com',
+              firstName: 'Fulano',
+              lastName: 'de Tal',
+              fieldValues: [
+                {
+                  field: 3,
+                  value: 'First Value'
+                },
+                {
+                  field: 1,
+                  value: 'Last Value'
+                }
+              ]
+            }
           }
         )
       end
@@ -66,8 +77,12 @@ RSpec.describe Acw::Client do
       it 'is a successfull request' do
         expect(result.success?).to eq true
         expect(result.value['contact']['email']).to eq('fulanodetal3@sicrano.com')
-        expect(result.value['contact']['firstName']).to eq('Fulano2')
-        expect(result.value['contact']['lastName']).to eq('Sicrano2')
+        expect(result.value['contact']['firstName']).to eq('Fulano')
+        expect(result.value['contact']['lastName']).to eq('de Tal')
+        expect(result.value['fieldValues'].first['value']).to eq('First Value')
+        expect(result.value['fieldValues'].first['field']).to eq('3')
+        expect(result.value['fieldValues'].last['value']).to eq('Last Value')
+        expect(result.value['fieldValues'].last['field']).to eq('1')
       end
     end
   end
