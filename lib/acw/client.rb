@@ -3,7 +3,6 @@
 require 'excon'
 require 'cgi'
 require 'json'
-require './lib/acw/helpers'
 
 module Acw
   class Client
