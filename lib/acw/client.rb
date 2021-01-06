@@ -69,6 +69,18 @@ module Acw
       end
     end
 
+    def contact_list_subscription(args = {})
+      safe_http_call do
+        args[:status] = (args[:status] == 'subscribe' ? 1 : 2)
+        params = { contactList: args }
+        connection.post(
+          path: "/api/#{API_VERSION}/contactLists",
+          headers: headers(config[:token]),
+          body: params.to_json
+        )
+      end
+    end
+
     def create_tag(args = {})
       safe_http_call do
         params = { tag: args }

@@ -144,6 +144,46 @@ RSpec.describe Acw::Client do
     end
   end
 
+  describe '#contact_list_subscription', :vcr do
+    context 'subscribing' do
+      let(:result) do
+        client.contact_list_subscription(
+          {
+            list: '19',
+            contact: '578531',
+            status: 'subscribe'
+          }
+        )
+      end
+
+      it 'is a successfull request' do
+        expect(result.success?).to eq true
+        expect(result.value['contactList']['contact']).to eq '578531'
+        expect(result.value['contactList']['list']).to eq '19'
+        expect(result.value['contactList']['status']).to eq 1
+      end
+    end
+
+    context 'unsubscribing' do
+      let(:result) do
+        client.contact_list_subscription(
+          {
+            list: '19',
+            contact: '578531',
+            status: 'unsub'
+          }
+        )
+      end
+
+      it 'is a successfull request' do
+        expect(result.success?).to eq true
+        expect(result.value['contactList']['contact']).to eq '578531'
+        expect(result.value['contactList']['list']).to eq '19'
+        expect(result.value['contactList']['status']).to eq 2
+      end
+    end
+  end
+
   describe '#create_tag', :vcr do
     context 'success' do
       let(:result) do

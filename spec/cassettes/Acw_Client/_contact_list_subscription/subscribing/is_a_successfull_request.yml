@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://url.api-us1.com/api/3/contactLists
+    body:
+      encoding: UTF-8
+      string: '{"contactList":{"list":"19","contact":"578531","status":1}}'
+    headers:
+      User-Agent:
+      - excon/0.78.1
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Api-Token:
+      - token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 06 Jan 2021 10:49:59 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3948'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4fe8aac7af6accdebd5a2026fd86efec1609930198; expires=Fri, 05-Feb-21
+        10:49:58 GMT; path=/; domain=.api-us1.com; HttpOnly; SameSite=Lax, PHPSESSID=be8c0c8aa368f60a9a9f60179b6195ed;
+        path=/; HttpOnly, em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970
+        00:00:01 GMT; Max-Age=0; path=/; domain=.mydomain.api-us1.com, em_acp_globalauth_cookie=deleted;
+        expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.mydomain.api-us1.com,
+        em_acp_globalauth_cookie=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0;
+        path=/; domain=.mydomain.api-us1.com, em_acp_globalauth_cookie=5110e71d-9631-4401-a04c-f4840a28963e;
+        path=/; domain=.mydomain.api-us1.com; secure; httponly
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      X-Envoy-Upstream-Service-Time:
+      - '130'
+      X-Request-Id:
+      - cfe69d1a-6cf8-44c2-822a-7b8c84297f3d
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0778ea6727000009e8d09ac000000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 60d4e01ea95209e8-GIG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"contacts":[{"cdate":"2021-01-05T15:47:04-06:00","email":"fulanodetal22244@sicrano.com","phone":"","firstName":"Fulano
+        de Tal","lastName":"","orgid":"0","orgname":"","segmentio_id":"","bounced_hard":"0","bounced_soft":"0","bounced_date":"0000-00-00","ip":"172064898","ua":"okhttp\/3.14.1","hash":"6acc7db9a1875595f8506b3c42701ccd","socialdata_lastcheck":"0000-00-00
+        00:00:00","email_local":"","email_domain":"","sentcnt":"0","rating_tstamp":"0000-00-00","gravatar":"0","deleted":"0","anonymized":"0","adate":"2021-01-06T04:40:30-06:00","udate":"2021-01-06T04:42:42-06:00","edate":null,"deleted_at":"0000-00-00
+        00:00:00","created_utc_timestamp":"2021-01-05 15:47:04","updated_utc_timestamp":"2021-01-06
+        04:42:42","created_timestamp":"2021-01-05 15:47:04","updated_timestamp":"2021-01-06
+        04:42:42","created_by":"0","updated_by":"0","email_empty":false,"links":{"bounceLogs":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/bounceLogs","contactAutomations":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/contactAutomations?limit=1000&orders%5Blastdate%5D=DESC","contactData":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/contactData","contactGoals":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/contactGoals","contactLists":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/contactLists","contactLogs":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/contactLogs","contactTags":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/contactTags","contactDeals":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/contactDeals","deals":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/deals","fieldValues":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/fieldValues","geoIps":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/geoIps","notes":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/notes","organization":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/organization","plusAppend":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/plusAppend","trackingLogs":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/trackingLogs","scoreValues":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/scoreValues","accountContacts":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/accountContacts","automationEntryCounts":"https:\/\/mydomain.api-us1.com\/api\/3\/contacts\/578531\/automationEntryCounts"},"id":"578531","organization":null}],"contactList":{"contact":"578531","list":"19","form":null,"seriesid":"0","sdate":"2021-01-06T04:42:42-06:00","udate":null,"status":1,"responder":"1","sync":"0","unsubreason":"","campaign":null,"message":null,"first_name":"Fulano
+        de Tal","last_name":"","ip4Sub":"0","sourceid":"3","autosyncLog":null,"ip4_last":"0","ip4Unsub":"0","created_timestamp":"2021-01-06
+        04:42:42","updated_timestamp":"2021-01-06 04:42:42","created_by":null,"updated_by":null,"unsubscribeAutomation":null,"links":{"automation":"https:\/\/mydomain.api-us1.com\/api\/3\/contactLists\/2312860\/automation","list":"https:\/\/mydomain.api-us1.com\/api\/3\/contactLists\/2312860\/list","contact":"https:\/\/mydomain.api-us1.com\/api\/3\/contactLists\/2312860\/contact","form":"https:\/\/mydomain.api-us1.com\/api\/3\/contactLists\/2312860\/form","autosyncLog":"https:\/\/mydomain.api-us1.com\/api\/3\/contactLists\/2312860\/autosyncLog","campaign":"https:\/\/mydomain.api-us1.com\/api\/3\/contactLists\/2312860\/campaign","unsubscribeAutomation":"https:\/\/mydomain.api-us1.com\/api\/3\/contactLists\/2312860\/unsubscribeAutomation","message":"https:\/\/mydomain.api-us1.com\/api\/3\/contactLists\/2312860\/message"},"id":"2312860","automation":null}}'
+    http_version:
+  recorded_at: Wed, 06 Jan 2021 10:49:59 GMT
+recorded_with: VCR 5.1.0
